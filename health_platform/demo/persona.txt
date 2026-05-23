@@ -1,0 +1,8 @@
+NAME: Arjun Sharma
+AGE: 45
+GENDER: Male
+CONDITIONS: Type 2 Diabetes, Hypertension
+ALLERGIES: Peanuts, Shellfish
+FOOD_PREFERENCE: Vegetarian
+PHYSICAL_DISABILITY: Knee pain (avoid high-impact exercises like running, jumping, squats)
+GOAL: Manage blood sugar, reduce weight by 5kg, improve cardiovascular health

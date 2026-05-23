@@ -1,0 +1,1234 @@
+{
+  "patient_id": "P004",
+  "generated_at": "2026-04-07T11:27:07.912713",
+  "pipeline": "autogen_style_multi_agent",
+  "moe_context_used": true,
+
+  "reports": {
+    "diet": {
+      "patient_id": "P004",
+      "report_type": "diet",
+      "generated_date": "2026-04-07",
+      "age": 48,
+      "gender": "male",
+      "weight_kg": 75.0,
+      "height_cm": 170.0,
+      "bmi": 26.0,
+      "activity_level": "moderately_active",
+      "diet_type": "balanced",
+      "caloric_requirement_kcal": 2454,
+      "carbohydrate_percent": 45,
+      "protein_percent": 15,
+      "fat_percent": 35,
+      "fiber_goal_g": 28,
+      "hydration_goal_ml": 2454,
+      "meals_per_day": 3,
+      "distribution_pct": {
+        "breakfast": 35,
+        "lunch": 40,
+        "dinner": 25,
+        "snacks": 2
+      },
+      "foods_to_avoid": [
+        "canned foods",
+        "canned soups",
+        "canned fruits"
+      ],
+      "dietary_restrictions": [
+        "Glycemic Index < 55 for all carbohydrates",
+        "Maximum 45g carbohydrate per meal",
+        "No simple sugars or refined flour",
+        "Minimum 2.5 liters water per day",
+        "Omega-3 rich foods (flaxseed, walnuts, fish)",
+        "Vitamin D rich foods: fortified milk, eggs, mushrooms + morning sunlight"
+      ],
+      "foods_to_prefer": [
+        "whole grains (brown rice, whole wheat)",
+        "green leafy vegetables",
+        "cinnamon (1 tsp/day)",
+        "turmeric (1 tsp/day) in meals"
+      ],
+      "hydration": "2.45 liters water per day",
+      "meal_distribution": "35% breakfast, 40% lunch, 25% dinner",
+      "dietary_supplements": [
+        "Vitamin D3 2000 IU/day",
+        "omega-3 fatty acids 1000 mg/day"
+      ],
+      "clinical_notes": [
+        "Diabetes: HbA1c target < 7, 150 min/week aerobic exercise",
+        "Hypertension: DASH diet, sodium < 1500mg/day, potassium-rich foods",
+        "Total Cholesterol: focus on rosuvastatin, atorvastatin, LDL",
+        "hsCRP Inflammation: hsCRP, CRP, cytokine",
+        "Vitamin D: cholecalciferol, sunlight, supplementation"
+      ],
+      "next_review_date": "2026-06-01",
+      "pillar2_model": "mixtral-health-moe-final + llama-3.2-3b-rag",
+      "context_enriched": true
+    },
+    "exercise": {
+      "patient_id": "P004",
+      "report_type": "exercise",
+      "risk_level": "High",
+      "weekly_target_minutes": 150,
+      "intensity_level": "moderate",
+      "activities": [
+        "brisk walking (30 min/day at 5-6 km/h)",
+        "standing balance exercises (15 min/day)",
+        "cat-cow stretch and gentle yoga 20 min"
+      ],
+      "warm_up": "5 min slow walking + light full-body stretching",
+      "cool_down": "5 min slow walking + full-body stretch + deep breathing",
+      "frequency": "5 days/week",
+      "duration": "25-30 min/session",
+      "progression_plan": [
+        "Week 1-2: Build base (15 min/day, 5 days/week)",
+        "Week 3-4: Add intensity (15 min, 5 days/week, level 2)",
+        "Week 5-6: Extend duration (25 min/session, 5 days/week)",
+        "Week 7-8: Add one new exercise (25 min, 5 days/week)",
+        "Week 9+: Maintain (25 min/session, 5 days/week) + review progress"
+      ],
+      "safety_notes": [
+        "Warm up 5 min before every session (slow walking + light stretching)",
+        "Cool down 5 min after every session",
+        "Start slow, build over time (5-10 min/session, 3 days/week)",
+        "Add intensity/duration every 2 weeks (5-10 min/session)",
+        "Stop if lightheaded/dizzy/painful; review form/gear",
+        "Heart rate: target 5-10 beats below max (165-220 bpm)",
+        "Ask doc before starting new exercise regimen"
+      ],
+      "referring_doctor": "Dr. Smith",
+      "review_date": "2026-06-01",
+      "rag_exercise_enrichment": "system\nYou are a clinical nutrition and exercise specialist.\nUse ONLY the provided database context to give specific, evidence-based guidance.\nBe concise and practical.\nuser\nPatient context: Patient conditions: ['diabetes_t2', 'hypertension'], allergies: [], BMI: 26.0\n\nDatabase context (exercise database):\n{\n  \"_id\": 129,\n  \"exercise_id\": \"EX_032_002\",\n  \"name\": \"Kickboxing Cardio\",\n  \"category\": \"aerobic\",\n  \"subtype\": \"cardiovascular\",\n  \"intensity_level\": \"hard\",\n  \"met_value\": 9.8,\n  \"risk_contraindications\": [\n    \"severe_cardiac\",\n    \"joint_pain\",\n    \"shoulder_pain\"\n  ],\n  \"anthropometry_modifiers\": {\n    \"high_body_fat\": \"reduce_duration\",\n    \"low_muscle_mass\": \"reduce_duration\",\n    \"balance_issues\": \"reduce_kick_height\"\n  },\n  \"recommended_frequency\": \"3x_week\",\n  \"progression_rules\": {\n    \"beginner\": \"20_mins\",\n    \"intermediate\": \"35_mins\",\n    \"advanced\": \"50_mins\"\n  },\n  \"description\": \"Kickboxing cardio is a hard-intensity aerobic class combining boxing and kicking movements set to music without contact. It has a hard intensity level with a MET value of 9.8. This non-contact format delivers excellent cardiovascular conditioning, coordination improvement, and full-body toning. People with joint pain should modify high kicks to lower-impact alternatives. For individuals with high body fat, reducing session duration initially prevents overexertion. It is recommended three times per week. Typical progression is 20 minutes for beginners, 35 minutes for intermediate individuals, and 50 minutes for advanced users.\",\n  \"primary_muscles\": [\n    \"quadriceps\",\n    \"glutes\",\n    \"shoulders\"\n  ],\n  \"secondary_muscles\": [\n    \"core\",\n    \"calf\",\n    \"arms\"\n  ],\n  \"equipment\": \"none\",\n  \"difficulty\": \"moderate\"\n}\n\nProvide specific guidance based on the database data above.\nassistant\n\nBased on the patient's conditions and the exercise database, here's specific guidance:\n\n**Exercise Recommendation:**\n\nConsidering the patient has diabetes and hypertension, it's essential to choose an exercise that is low-risk and manageable. Given the patient's BMI of 26.0, which falls into the overweight category, it's recommended to reduce the duration of the exercise initially to prevent overexertion.\n\n**Modified Exercise:**\n\nI recommend the patient start with the \"Kickboxing Cardio\" exercise, but with modifications to reduce the duration and intensity level. Since the patient has no allergies, no contraindications, and no balance issues, we can proceed with the exercise as is.\n\n**Modified Parameters:**\n\n* Duration: Start with 20 minutes (beginner progression) and gradually increase to 35 minutes (intermediate progression) as the patient becomes more comfortable.\n* Intensity Level: Maintain the hard intensity level, but the patient can start with a lower intensity level and gradually increase as they",
+      "generated_date": "2026-04-07",
+      "pillar2_model": "mixtral-health-moe-final + llama-3.2-3b-rag",
+      "context_enriched": true
+    },
+    "risk": {
+      "patient_id": "P004",
+      "age": 48,
+      "gender": "Male",
+      "weight": 75.0,
+      "height": 170.0,
+      "bmi": 26.0,
+      "activity_level": "moderately_active",
+      "diet_type": "non-vegetarian",
+      "conditions": [
+        "diabetes_t2",
+        "hypertension"
+      ],
+      "medications": [
+        "metformin",
+        "lisinopril"
+      ],
+      "allergies": [],
+      "risk_level": "High",
+      "genomic_clade": "1",
+      "genomic_risk_score": 0.75,
+      "dynamic_risk_score": 1.5,
+      "combined_risk_delta_summary": {
+        "Total Cholesterol": {
+          "genomic": "High",
+          "manifested": "High",
+          "risk_category": "High_manifested_risk"
+        },
+        "hsCRP Inflammation": {
+          "genomic": "High",
+          "manifested": "Intermediate",
+          "risk_category": "Intermediate_manifested_risk"
+        },
+        "Lipoprotein(a)": {
+          "genomic": "Normal",
+          "manifested": "Low",
+          "risk_category": "Low_manifested_risk"
+        },
+        "Vitamin D": {
+          "genomic": "High",
+          "manifested": "High",
+          "risk_category": "High_manifested_risk"
+        },
+        "Vitamin B12": {
+          "genomic": "Normal",
+          "manifested": "Low",
+          "risk_category": "Low_manifested_risk"
+        }
+      },
+      "clinical_recommendations": [
+        "Total Cholesterol: rosuvastatin, atorvastatin, LDL",
+        "hsCRP Inflammation: hsCRP, CRP, cytokine",
+        "Vitamin D: cholecalciferol, sunlight, supplementation"
+      ],
+      "diet_and_exercise_flags": {
+        "diet": [
+          "Anti-inflammatory: turmeric, ginger, omega-3 rich foods (flaxseed, walnuts)",
+          "Vitamin D rich foods: fortified milk, eggs, mushrooms + morning sunlight",
+          "Low saturated fat (<7% kcal), high soluble fiber (oats, barley, psyllium)"
+        ],
+        "exercise": [
+          "Low-impact exercise \u2014 yoga, swimming (reduces CRP)",
+          "Moderate cardio 150min/week \u2014 brisk walking, cycling"
+        ]
+      },
+      "generated_date": "2026-04-07",
+      "report_type": "risk",
+      "pillar2_model": "mixtral-health-moe-final + llama-3.2-3b-rag",
+      "context_enriched": true
+    }
+  },
+  "validations": {
+    "diet": {
+      "decision": "APPROVED WITH NOTES \u26a0\ufe0f",
+      "message": "NutritionalAgent validation complete for patient P004. Diet report APPROVED WITH NOTES \u26a0\ufe0f. Calories: 0 kcal, Protein: 0g. Issues: Caloric intake 0 needs review, Low protein intake, High sodium",
+      "checks": {
+        "caloric_range": "\u26a0\ufe0f  REVIEW \u2014 calories 0 outside typical range",
+        "protein_adequate": "\u26a0\ufe0f  REVIEW \u2014 protein may be low",
+        "sodium_safe": "\u26a0\ufe0f  REVIEW \u2014 sodium exceeds recommendation",
+        "meal_structure": "\u26a0\ufe0f  REVIEW \u2014 insufficient meal variety",
+        "south_asian_appropriate": "\u2705 PASS \u2014 South Asian foods included",
+        "allergen_checked": "\u2705 PASS \u2014 allergens reviewed"
+      },
+      "issues": [
+        "Caloric intake 0 needs review",
+        "Low protein intake",
+        "High sodium"
+      ],
+      "status": "validated"
+    },
+    "exercise": {
+      "decision": "APPROVED \u2705",
+      "message": "ExerciseAgent validation complete for patient P004. Exercise plan APPROVED \u2705. Weekly target: 150 min, Intensity: moderate. All checks passed!",
+      "checks": {
+        "weekly_duration": "\u2705 PASS \u2014 150 min/week appropriate",
+        "intensity_safe": "\u2705 PASS \u2014 intensity appropriate",
+        "rest_days": "\u26a0\ufe0f  REVIEW \u2014 consider adding rest days",
+        "cardiovascular_safe": "\u2705 PASS \u2014 cardiovascular safety considered",
+        "progression_safe": "\u2705 PASS \u2014 gradual progression planned"
+      },
+      "issues": [],
+      "status": "validated"
+    },
+    "risk": {
+      "decision": "APPROVED WITH NOTES \u26a0\ufe0f",
+      "message": "RiskAgent validation complete for patient P004. Risk profile APPROVED WITH NOTES \u26a0\ufe0f. Risk level: High, Flags: 0. Issues: Missing referral recommendation",
+      "checks": {
+        "risk_level_valid": "\u2705 PASS \u2014 risk level 'High' properly categorized",
+        "flags_present": "\u26a0\ufe0f  REVIEW \u2014 no risk flags identified",
+        "referral_included": "\u26a0\ufe0f  REVIEW \u2014 no referral recommendation",
+        "risk_score_present": "\u26a0\ufe0f  REVIEW \u2014 risk score missing",
+        "intervention_assessed": "\u2705 PASS \u2014 intervention need assessed"
+      },
+      "issues": [
+        "Missing referral recommendation"
+      ],
+      "status": "validated"
+    }
+  },
+  "pipeline_status": "complete",
+  "total_time_seconds": 284.5708661079407,
+  "total_conversations": 17,
+  "meal_options": {
+    "generated_at": "2026-04-10T15:37:03.521194",
+    "generated_by": "Mixtral MOE + Groq Llama-3.3-70B + USDA DB",
+    "total_slots": 5,
+    "options_per_slot": 3,
+    "patient_profile": {
+      "patient_id": "P004",
+      "name": "Rajesh Kumar",
+      "age": 48,
+      "gender": "male",
+      "bmi": 25.0,
+      "ethnicity": "East_Asian",
+      "diet_pref": "omnivore",
+      "activity": "moderately_active",
+      "conditions": [
+        "diabetes_t2",
+        "hypertension"
+      ],
+      "medications": [
+        "metformin",
+        "lisinopril"
+      ],
+      "allergies": [],
+      "fat_percentage": 24.8,
+      "body_type": "mesomorph",
+      "muscle_mass_kg": 25.4,
+      "lean_body_mass_kg": 56.4,
+      "target_kcal": 1800,
+      "protein_target_g": 90
+    },
+    "slots": {
+      "breakfast": {
+        "meal_slot": "breakfast",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + USDA validation",
+        "option_a": {
+          "label": "\u2605 Recommended (LLaMA Recipe v3)",
+          "recipe_name": "Egg White Vegetable Omelette",
+          "items": [
+            {
+              "food": "egg whites",
+              "qty": "4",
+              "kcal": 50,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "spinach",
+              "qty": "40g",
+              "kcal": 9,
+              "protein_g": 0.9,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "tomato",
+              "qty": "40g",
+              "kcal": 7,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "onion",
+              "qty": "30g",
+              "kcal": 12,
+              "protein_g": 0.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "mushroom",
+              "qty": "40g",
+              "kcal": 9,
+              "protein_g": 0.4,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "olive oil",
+              "qty": "5ml",
+              "kcal": 45,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "turmeric",
+              "qty": "1g",
+              "kcal": 3,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "salt",
+              "qty": "0.5g",
+              "kcal": 0,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            }
+          ],
+          "steps": [
+            "Whisk egg whites with turmeric",
+            "Heat oil in pan",
+            "Add onion, tomato, mushroom",
+            "Add egg whites when wet ingredients ready",
+            "Fold when set"
+          ],
+          "total_kcal": 135,
+          "protein_g": 1.4,
+          "fat_g": 14,
+          "carbs_g": 12,
+          "fiber_g": 3,
+          "sodium_mg": 320,
+          "clinical_note": "Hand-crafted recipe for cardiovascular risk management",
+          "source": "LLaMA Recipe v3 (fine-tuned, 500 hand-crafted recipes)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "items": [
+            {
+              "food": "Idli",
+              "qty": "2 pieces",
+              "kcal": 10,
+              "protein_g": 0.5,
+              "carbs_g": 25.0,
+              "fat_g": 2.0,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Mixed nuts",
+              "qty": "1 ounce",
+              "kcal": 170,
+              "protein_g": 5.0,
+              "carbs_g": 6.0,
+              "fat_g": 16.0,
+              "sodium_mg": 0
+            }
+          ],
+          "total_kcal": 180,
+          "protein_g": 5.5,
+          "clinical_note": "This option provides a good mix of complex carbohydrates and healthy fats, which can help manage blood sugar levels and improve heart health in patients with diabetes and hypertension.",
+          "fat_g": 18.0,
+          "carbs_g": 31.0,
+          "sodium_mg": 50,
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "items": [
+            {
+              "food": "Poha",
+              "qty": "1/2 cup cooked",
+              "kcal": 32,
+              "protein_g": 1.1,
+              "carbs_g": 25.0,
+              "fat_g": 2.0,
+              "sodium_mg": 10
+            },
+            {
+              "food": "Grilled chicken breast",
+              "qty": "2 ounces",
+              "kcal": 226,
+              "protein_g": 15.6,
+              "carbs_g": 0.0,
+              "fat_g": 3.0,
+              "sodium_mg": 25
+            }
+          ],
+          "total_kcal": 258,
+          "protein_g": 16.7,
+          "clinical_note": "This option is high in protein, which can help regulate blood sugar levels and provide a feeling of fullness, while also being low in sodium and rich in omega-3 fatty acids from the chicken breast, which can help reduce inflammation and improve heart health.",
+          "fat_g": 5.0,
+          "carbs_g": 25.0,
+          "sodium_mg": 35,
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "mid_morning_snack": {
+        "meal_slot": "mid_morning_snack",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + USDA validation",
+        "option_a": {
+          "label": "\u2605 Recommended (LLaMA Recipe v3)",
+          "recipe_name": "Boiled Egg Whites",
+          "items": [
+            {
+              "food": "eggs",
+              "qty": "3",
+              "kcal": 203,
+              "protein_g": 28.7,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "black pepper",
+              "qty": "1g",
+              "kcal": 3,
+              "protein_g": 0.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "lemon juice",
+              "qty": "5ml",
+              "kcal": 1,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            }
+          ],
+          "steps": [
+            "Boil eggs 8 min",
+            "Peel and remove yolks",
+            "Season whites with pepper and lemon"
+          ],
+          "total_kcal": 207,
+          "protein_g": 28.8,
+          "fat_g": 0,
+          "carbs_g": 1,
+          "fiber_g": 0,
+          "sodium_mg": 180,
+          "clinical_note": "Hand-crafted recipe for cardiovascular risk management",
+          "source": "LLaMA Recipe v3 (fine-tuned, 500 hand-crafted recipes)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "items": [
+            {
+              "food": "Ragi crackers",
+              "qty": "2-3 pieces",
+              "kcal": 33,
+              "protein_g": 1.0,
+              "carbs_g": 19.0,
+              "fat_g": 1.9,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Low-fat dahi",
+              "qty": "1/2 cup",
+              "kcal": 267,
+              "protein_g": 4.4,
+              "carbs_g": 9.5,
+              "fat_g": 3.8,
+              "sodium_mg": 100
+            }
+          ],
+          "total_kcal": 300,
+          "protein_g": 5.4,
+          "clinical_note": "Ragi crackers provide fiber, which can help manage blood sugar levels, while low-fat dahi offers protein to support muscle mass and satisfy hunger, beneficial for a patient with diabetes and hypertension.",
+          "fat_g": 6.0,
+          "carbs_g": 30.0,
+          "sodium_mg": 150,
+          "source": "Groq Llama-3.3-70B",
+          "capped": true
+        },
+        "option_c": {
+          "label": "Option C",
+          "items": [
+            {
+              "food": "Roasted makhana",
+              "qty": "1/4 cup",
+              "kcal": 46,
+              "protein_g": 1.6,
+              "carbs_g": 6.2,
+              "fat_g": 0.9,
+              "sodium_mg": 80
+            },
+            {
+              "food": "Green tea with lemon and ginger",
+              "qty": "1 cup",
+              "kcal": 246,
+              "protein_g": 13.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 10
+            },
+            {
+              "food": "Almonds",
+              "qty": "1 oz (10-12 pieces)",
+              "kcal": 7,
+              "protein_g": 0.2,
+              "carbs_g": 1.8,
+              "fat_g": 4.9,
+              "sodium_mg": 0
+            }
+          ],
+          "total_kcal": 300,
+          "protein_g": 14.9,
+          "clinical_note": "Roasted makhana provides a crunchy snack rich in fiber and protein, while green tea with lemon and ginger offers anti-inflammatory benefits, and almonds contribute healthy fats, all supporting cardiovascular health and satisfying hunger.",
+          "fat_g": 19.0,
+          "carbs_g": 26.0,
+          "sodium_mg": 90,
+          "source": "Groq Llama-3.3-70B",
+          "capped": true
+        }
+      },
+      "lunch": {
+        "meal_slot": "lunch",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + USDA validation",
+        "option_a": {
+          "label": "\u2605 Recommended (LLaMA Recipe v3)",
+          "recipe_name": "Tuna Rice Bowl",
+          "items": [
+            {
+              "food": "canned tuna",
+              "qty": "80g",
+              "kcal": 460,
+              "protein_g": 17.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "brown rice",
+              "qty": "60g",
+              "kcal": 75,
+              "protein_g": 1.5,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "cucumber",
+              "qty": "50g",
+              "kcal": 7,
+              "protein_g": 0.4,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "avocado",
+              "qty": "50g",
+              "kcal": 73,
+              "protein_g": 0.9,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "soy sauce",
+              "qty": "5ml",
+              "kcal": 3,
+              "protein_g": 0.5,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "sesame seeds",
+              "qty": "5g",
+              "kcal": 29,
+              "protein_g": 0.9,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "lemon juice",
+              "qty": "10ml",
+              "kcal": 2,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            }
+          ],
+          "steps": [
+            "Cook and cool brown rice",
+            "Mix tuna with soy sauce",
+            "Assemble bowl",
+            "Top with sesame seeds and lemon"
+          ],
+          "total_kcal": 650,
+          "protein_g": 21.2,
+          "fat_g": 18,
+          "carbs_g": 68,
+          "fiber_g": 7,
+          "sodium_mg": 420,
+          "clinical_note": "Hand-crafted recipe for cardiovascular risk management",
+          "source": "LLaMA Recipe v3 (fine-tuned, 500 hand-crafted recipes)",
+          "capped": true
+        },
+        "option_b": {
+          "label": "Option B",
+          "items": [
+            {
+              "food": "Chicken Tikka",
+              "qty": "3 oz serving",
+              "kcal": 140,
+              "protein_g": 9.7,
+              "carbs_g": 4.0,
+              "fat_g": 3.5,
+              "sodium_mg": 100
+            },
+            {
+              "food": "Brown Basmati Rice",
+              "qty": "1/2 cup cooked",
+              "kcal": 151,
+              "protein_g": 2.9,
+              "carbs_g": 25.0,
+              "fat_g": 1.5,
+              "sodium_mg": 2
+            },
+            {
+              "food": "Saag Aloo (without potato)",
+              "qty": "1 cup cooked",
+              "kcal": 70,
+              "protein_g": 3.2,
+              "carbs_g": 10.0,
+              "fat_g": 0.5,
+              "sodium_mg": 50
+            }
+          ],
+          "total_kcal": 361,
+          "protein_g": 15.8,
+          "clinical_note": "High protein content from chicken tikka supports muscle mass, while brown basmati rice provides complex carbohydrates for sustained energy. Saag aloo without potato is low in sodium and rich in antioxidants, supporting cardiovascular health.",
+          "fat_g": 5.5,
+          "carbs_g": 39.0,
+          "sodium_mg": 152,
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "items": [
+            {
+              "food": "Grilled Fish (Pomfret)",
+              "qty": "3 oz serving",
+              "kcal": 120,
+              "protein_g": 2.4,
+              "carbs_g": 0.0,
+              "fat_g": 2.5,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Mixed Vegetable Biryani",
+              "qty": "1 cup cooked",
+              "kcal": 200,
+              "protein_g": 1.9,
+              "carbs_g": 30.0,
+              "fat_g": 6.0,
+              "sodium_mg": 150
+            },
+            {
+              "food": "Raita (low-fat yogurt with cucumber and cumin)",
+              "qty": "1/2 cup",
+              "kcal": 10,
+              "protein_g": 0.1,
+              "carbs_g": 2.0,
+              "fat_g": 0.5,
+              "sodium_mg": 10
+            }
+          ],
+          "total_kcal": 330,
+          "protein_g": 4.4,
+          "clinical_note": "Grilled fish provides omega-3 fatty acids, supporting heart health. Mixed vegetable biryani offers complex carbohydrates and a variety of vitamins and minerals. Raita adds probiotics and helps with sodium balance.",
+          "fat_g": 9.0,
+          "carbs_g": 32.0,
+          "sodium_mg": 210,
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "evening_snack": {
+        "meal_slot": "evening_snack",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + USDA validation",
+        "option_a": {
+          "label": "\u2605 Recommended (LLaMA Recipe v3)",
+          "recipe_name": "Tuna on Whole Grain Cracker",
+          "items": [
+            {
+              "food": "canned tuna",
+              "qty": "50g",
+              "kcal": 127,
+              "protein_g": 4.7,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "wholerain cracker",
+              "qty": "20g",
+              "kcal": 170,
+              "protein_g": 0.4,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "cucumber",
+              "qty": "30g",
+              "kcal": 2,
+              "protein_g": 0.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "lemon juice",
+              "qty": "5ml",
+              "kcal": 0,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "black pepper",
+              "qty": "0.5g",
+              "kcal": 0,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            }
+          ],
+          "steps": [
+            "Drain tuna",
+            "Mix with lemon juice and pepper",
+            "Top crackers with cucumber and tuna"
+          ],
+          "total_kcal": 300,
+          "protein_g": 5.2,
+          "fat_g": 6,
+          "carbs_g": 13,
+          "fiber_g": 2,
+          "sodium_mg": 320,
+          "clinical_note": "Hand-crafted recipe for cardiovascular risk management",
+          "source": "LLaMA Recipe v3 (fine-tuned, 500 hand-crafted recipes)",
+          "capped": true
+        },
+        "option_b": {
+          "label": "Option B",
+          "items": [
+            {
+              "food": "Ragi cookies",
+              "qty": "2 pieces",
+              "kcal": 158,
+              "protein_g": 0.2,
+              "carbs_g": 20.0,
+              "fat_g": 3.0,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Low-fat dahi",
+              "qty": "1/2 cup",
+              "kcal": 100,
+              "protein_g": 1.7,
+              "carbs_g": 8.0,
+              "fat_g": 0.0,
+              "sodium_mg": 10
+            }
+          ],
+          "total_kcal": 258,
+          "protein_g": 1.9,
+          "clinical_note": "Ragi cookies provide fiber, which can help lower cholesterol, while low-fat dahi offers protein to support blood sugar control and satiety",
+          "fat_g": 3.0,
+          "carbs_g": 28.0,
+          "sodium_mg": 60,
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "items": [
+            {
+              "food": "Roasted makhana",
+              "qty": "1/4 cup",
+              "kcal": 104,
+              "protein_g": 3.6,
+              "carbs_g": 17.3,
+              "fat_g": 1.7,
+              "sodium_mg": 5
+            },
+            {
+              "food": "Grilled chicken tikka",
+              "qty": "2 oz",
+              "kcal": 196,
+              "protein_g": 13.5,
+              "carbs_g": 0.0,
+              "fat_g": 2.6,
+              "sodium_mg": 50
+            }
+          ],
+          "total_kcal": 300,
+          "protein_g": 17.1,
+          "clinical_note": "Roasted makhana provides a good source of antioxidants and fiber, while grilled chicken tikka offers lean protein to support blood sugar control and cardiovascular health",
+          "fat_g": 5.0,
+          "carbs_g": 20.0,
+          "sodium_mg": 55,
+          "source": "Groq Llama-3.3-70B",
+          "capped": true
+        }
+      },
+      "dinner": {
+        "meal_slot": "dinner",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + USDA validation",
+        "option_a": {
+          "label": "\u2605 Recommended (LLaMA Recipe v3)",
+          "recipe_name": "Baked Salmon with Vegetables",
+          "items": [
+            {
+              "food": "salmon",
+              "qty": "100g",
+              "kcal": 547,
+              "protein_g": 20.2,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "zucchini",
+              "qty": "80g",
+              "kcal": 13,
+              "protein_g": 0.9,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "cherry tomato",
+              "qty": "60g",
+              "kcal": 10,
+              "protein_g": 0.1,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "garlic",
+              "qty": "8g",
+              "kcal": 11,
+              "protein_g": 0.3,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "lemon juice",
+              "qty": "15ml",
+              "kcal": 3,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "olive oil",
+              "qty": "8ml",
+              "kcal": 66,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "herbs",
+              "qty": "3g",
+              "kcal": 1,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            },
+            {
+              "food": "salt",
+              "qty": "0.5g",
+              "kcal": 0,
+              "protein_g": 0.0,
+              "carbs_g": 0.0,
+              "fat_g": 0.0,
+              "sodium_mg": 0
+            }
+          ],
+          "steps": [
+            "Place salmon and vegetables on baking tray",
+            "Dress with olive oil, lemon, garlic, herbs",
+            "Bake 200C for 18 min"
+          ],
+          "total_kcal": 650,
+          "protein_g": 21.5,
+          "fat_g": 22,
+          "carbs_g": 12,
+          "fiber_g": 4,
+          "sodium_mg": 330,
+          "clinical_note": "Hand-crafted recipe for cardiovascular risk management",
+          "source": "LLaMA Recipe v3 (fine-tuned, 500 hand-crafted recipes)",
+          "capped": true
+        },
+        "option_b": {
+          "label": "Option B",
+          "items": [
+            {
+              "food": "Grilled chicken tikka",
+              "qty": "3 oz serving",
+              "kcal": 140,
+              "protein_g": 9.7,
+              "carbs_g": 0.0,
+              "fat_g": 3.5,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Brown basmati rice",
+              "qty": "1/2 cup cooked",
+              "kcal": 151,
+              "protein_g": 2.9,
+              "carbs_g": 25.0,
+              "fat_g": 1.5,
+              "sodium_mg": 2
+            },
+            {
+              "food": "Saag paneer (low sodium, low fat)",
+              "qty": "1/2 cup serving",
+              "kcal": 120,
+              "protein_g": 6.4,
+              "carbs_g": 10.0,
+              "fat_g": 7.0,
+              "sodium_mg": 50
+            }
+          ],
+          "total_kcal": 411,
+          "protein_g": 19.0,
+          "clinical_note": "This option provides a good balance of protein, complex carbohydrates, and healthy fats, while keeping sodium intake low, which is beneficial for managing hypertension and diabetes.",
+          "fat_g": 12.0,
+          "carbs_g": 35.0,
+          "sodium_mg": 102,
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "items": [
+            {
+              "food": "Lentil soup (low sodium)",
+              "qty": "1 cup serving",
+              "kcal": 52,
+              "protein_g": 5.3,
+              "carbs_g": 40.0,
+              "fat_g": 0.9,
+              "sodium_mg": 100
+            },
+            {
+              "food": "Grilled fish (pomfret)",
+              "qty": "3 oz serving",
+              "kcal": 180,
+              "protein_g": 3.6,
+              "carbs_g": 0.0,
+              "fat_g": 3.5,
+              "sodium_mg": 50
+            },
+            {
+              "food": "Mixed greens salad with low-fat yogurt dressing",
+              "qty": "1 cup serving",
+              "kcal": 70,
+              "protein_g": 0.4,
+              "carbs_g": 10.0,
+              "fat_g": 0.5,
+              "sodium_mg": 50
+            }
+          ],
+          "total_kcal": 302,
+          "protein_g": 9.3,
+          "clinical_note": "This option is high in protein, fiber, and omega-3 fatty acids from the fish, which can help reduce inflammation and improve heart health, while the lentil soup provides complex carbohydrates and the salad adds more fiber and antioxidants.",
+          "fat_g": 4.9,
+          "carbs_g": 50.0,
+          "sodium_mg": 200,
+          "source": "Groq Llama-3.3-70B"
+        }
+      }
+    }
+  },
+  "exercise_options": {
+    "generated_at": "2026-04-10T15:37:16.357538",
+    "generated_by": "Mixtral MOE + Groq Llama-3.3-70B + Exercise DB",
+    "total_days": 7,
+    "options_per_day": 3,
+    "weekly_plan": {
+      "Monday": {
+        "day": "Monday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "brisk walking",
+          "duration_min": 30,
+          "intensity": "Moderate",
+          "kcal_burned": 74,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "yoga",
+          "duration_min": 30,
+          "intensity": "Low",
+          "kcal_burned": 120,
+          "clinical_note": "reduces blood pressure and improves insulin sensitivity, beneficial for hypertension and diabetes_t2 management",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "cycling",
+          "duration_min": 30,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 140,
+          "clinical_note": "improves cardiovascular function, enhances glucose uptake in muscles, and aids in weight management, all beneficial for patients with hypertension and diabetes_t2",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Tuesday": {
+        "day": "Tuesday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "standing balance exercises",
+          "duration_min": 15,
+          "intensity": "Moderate",
+          "kcal_burned": 32,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "brisk walking",
+          "duration_min": 15,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 100,
+          "clinical_note": "improves insulin sensitivity and blood pressure control, reducing the risk of cardiovascular complications in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "yoga with light stretching",
+          "duration_min": 15,
+          "intensity": "Low",
+          "kcal_burned": 80,
+          "clinical_note": "reduces stress and improves flexibility, while also enhancing cardiovascular health and metabolic control in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Wednesday": {
+        "day": "Wednesday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "cat",
+          "duration_min": 20,
+          "intensity": "Moderate",
+          "kcal_burned": 50,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "brisk walking",
+          "duration_min": 20,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 100,
+          "clinical_note": "Improves insulin sensitivity and helps regulate blood pressure in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "swimming or water aerobics",
+          "duration_min": 20,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 120,
+          "clinical_note": "Provides a low-impact, aerobic workout that can help manage blood sugar levels and reduce cardiovascular risk factors in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Thursday": {
+        "day": "Thursday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "rest or gentle stretching 20 min",
+          "duration_min": 20,
+          "intensity": "Moderate",
+          "kcal_burned": 50,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "Yoga",
+          "duration_min": 20,
+          "intensity": "Low",
+          "kcal_burned": 100,
+          "clinical_note": "Yoga can help reduce blood pressure and improve insulin sensitivity, which is beneficial for patients with hypertension and diabetes_t2",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "Brisk Walking",
+          "duration_min": 20,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 130,
+          "clinical_note": "Brisk walking can help improve cardiovascular health by increasing blood flow and reducing inflammation, which can help manage diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Friday": {
+        "day": "Friday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "brisk walking 30 min",
+          "duration_min": 30,
+          "intensity": "Moderate",
+          "kcal_burned": 74,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "yoga",
+          "duration_min": 30,
+          "intensity": "Low",
+          "kcal_burned": 120,
+          "clinical_note": "helps reduce blood pressure and improve insulin sensitivity in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "swimming",
+          "duration_min": 30,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 140,
+          "clinical_note": "provides aerobic benefits while being low-impact, reducing stress on joints and improving cardiovascular health in patients with hypertension and diabetes_t2",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Saturday": {
+        "day": "Saturday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "cycling or swimming 30 min",
+          "duration_min": 30,
+          "intensity": "Moderate",
+          "kcal_burned": 74,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "brisk walking",
+          "duration_min": 30,
+          "intensity": "Low",
+          "kcal_burned": 120,
+          "clinical_note": "improves insulin sensitivity and blood pressure control, reducing the risk of cardiovascular complications in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "yoga with light cardio",
+          "duration_min": 30,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 140,
+          "clinical_note": "enhances cardiovascular flexibility, reduces stress, and improves metabolic function, which is beneficial for patients with hypertension and diabetes_t2",
+          "source": "Groq Llama-3.3-70B"
+        }
+      },
+      "Sunday": {
+        "day": "Sunday",
+        "generated_by": "Mixtral MOE (A) + Groq Llama-3.3-70B (B,C) + Exercise DB",
+        "option_a": {
+          "label": "\u2605 Recommended (MOE)",
+          "exercise": "rest or leisurely walk 20 min",
+          "duration_min": 20,
+          "intensity": "Moderate",
+          "kcal_burned": 42,
+          "clinical_note": "Primary recommendation from fine-tuned Mixtral-8x7B MOE",
+          "source": "Mixtral MOE (fine-tuned)"
+        },
+        "option_b": {
+          "label": "Option B",
+          "exercise": "Yoga",
+          "duration_min": 20,
+          "intensity": "Low",
+          "kcal_burned": 100,
+          "clinical_note": "Improves insulin sensitivity and reduces blood pressure in patients with diabetes_t2 and hypertension",
+          "source": "Groq Llama-3.3-70B"
+        },
+        "option_c": {
+          "label": "Option C",
+          "exercise": "Light Swimming",
+          "duration_min": 20,
+          "intensity": "Low-Moderate",
+          "kcal_burned": 140,
+          "clinical_note": "Enhances cardiovascular health by increasing aerobic capacity and reducing systemic vascular resistance in patients with hypertension and diabetes_t2",
+          "source": "Groq Llama-3.3-70B"
+        }
+      }
+    }
+  }
+}

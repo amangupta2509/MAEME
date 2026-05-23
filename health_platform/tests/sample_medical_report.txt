@@ -1,0 +1,40 @@
+
+PATIENT MEDICAL REPORT
+Date: 10 May 2026
+Patient: John Doe | DOB: 15 March 1981 | ID: PT-001
+
+VITALS:
+Blood Pressure: 145/92 mmHg (High)
+Heart Rate: 88 bpm
+Temperature: 37.1°C
+Weight: 89 kg | Height: 175 cm | BMI: 29.1
+SpO2: 97%
+
+LABORATORY RESULTS:
+HbA1c: 8.2% (Normal: <5.7%) — ABNORMAL
+Fasting Glucose: 178 mg/dL (Normal: 70-99 mg/dL) — ABNORMAL
+LDL Cholesterol: 162 mg/dL (Normal: <100 mg/dL) — ABNORMAL
+HDL Cholesterol: 38 mg/dL (Normal: >40 mg/dL) — ABNORMAL
+Triglycerides: 210 mg/dL (Normal: <150 mg/dL) — ABNORMAL
+Creatinine: 1.1 mg/dL (Normal: 0.7-1.2 mg/dL) — Normal
+eGFR: 72 mL/min (Normal: >60) — Normal
+
+DIAGNOSES:
+1. Type 2 Diabetes Mellitus — poorly controlled (ICD: E11.9)
+2. Essential Hypertension (ICD: I10)
+3. Hyperlipidemia (ICD: E78.5)
+4. Overweight (ICD: E66.09)
+
+MEDICATIONS:
+1. Metformin 500mg — twice daily with meals
+2. Amlodipine 5mg — once daily
+3. Atorvastatin 20mg — once at night
+
+CLINICAL NOTES:
+Patient complaints of fatigue and occasional dizziness.
+Advised to reduce sodium intake and increase physical activity.
+Referred to dietician for medical nutrition therapy.
+
+FOLLOW-UP:
+Repeat HbA1c in 3 months.
+Review BP medication in 4 weeks.

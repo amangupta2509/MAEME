@@ -1,0 +1,215 @@
+{
+  "diet": {
+    "breakfast": {
+      "veg": [
+        {
+          "name": "Oats with Nuts and Berries",
+          "kcal": 320, "protein": "12g", "carbs": "45g", "fat": "8g",
+          "ingredients": ["Rolled oats: 50g", "Almond milk: 150ml", "Walnuts: 10g", "Blueberries: 30g", "Cinnamon: 1 tsp", "Flaxseeds: 5g"],
+          "steps": ["Boil oats in almond milk for 5 min", "Top with walnuts and blueberries", "Sprinkle cinnamon and flaxseeds"],
+          "clinical_note": "Low glycemic index. Cinnamon helps regulate blood sugar."
+        },
+        {
+          "name": "Vegetable Upma",
+          "kcal": 280, "protein": "8g", "carbs": "42g", "fat": "6g",
+          "ingredients": ["Semolina: 50g", "Onion: 30g", "Tomato: 40g", "Green peas: 30g", "Mustard seeds: 1 tsp", "Turmeric: 0.5 tsp", "Olive oil: 5ml"],
+          "steps": ["Roast semolina dry for 3 min", "Saute mustard seeds and vegetables in oil", "Add water and semolina, cook 5 min"],
+          "clinical_note": "Rich in fiber. Turmeric has anti-inflammatory benefits."
+        },
+        {
+          "name": "Moong Dal Chilla",
+          "kcal": 260, "protein": "14g", "carbs": "35g", "fat": "5g",
+          "ingredients": ["Moong dal: 60g (soaked overnight)", "Ginger: 5g", "Green chilli: 1", "Onion: 20g", "Spinach: 30g", "Olive oil: 5ml"],
+          "steps": ["Blend soaked dal with ginger and chilli", "Add chopped onion and spinach", "Pour batter on pan, cook both sides 3 min each"],
+          "clinical_note": "High protein vegetarian option. Excellent for blood sugar management."
+        }
+      ],
+      "non_veg": [
+        {
+          "name": "Egg White Vegetable Omelette",
+          "kcal": 135, "protein": "18g", "carbs": "6g", "fat": "4g",
+          "ingredients": ["Egg whites: 4", "Spinach: 40g", "Tomato: 40g", "Onion: 30g", "Mushroom: 40g", "Olive oil: 5ml", "Turmeric: 1g"],
+          "steps": ["Whisk egg whites with turmeric", "Heat oil, add vegetables", "Pour egg whites, fold when set"],
+          "clinical_note": "High protein, low fat. Ideal for diabetic patients."
+        },
+        {
+          "name": "Boiled Eggs with Whole Grain Toast",
+          "kcal": 280, "protein": "20g", "carbs": "28g", "fat": "8g",
+          "ingredients": ["Eggs: 2", "Whole grain bread: 2 slices", "Avocado: 30g", "Lemon juice: 5ml", "Black pepper: 0.5g"],
+          "steps": ["Boil eggs for 8 min", "Toast bread", "Mash avocado with lemon and pepper", "Serve eggs on toast with avocado"],
+          "clinical_note": "Balanced macros. Healthy fats support heart health."
+        }
+      ]
+    },
+    "lunch": {
+      "veg": [
+        {
+          "name": "Palak Paneer with Brown Rice",
+          "kcal": 420, "protein": "18g", "carbs": "52g", "fat": "12g",
+          "ingredients": ["Paneer: 80g", "Spinach: 100g", "Brown rice: 60g", "Onion: 30g", "Garlic: 2 cloves", "Tomato: 40g", "Cumin: 1 tsp", "Olive oil: 8ml"],
+          "steps": ["Cook brown rice", "Blanch and puree spinach", "Saute onion garlic, add tomato and spices", "Add paneer and spinach puree, cook 5 min", "Serve with rice"],
+          "clinical_note": "Iron-rich spinach with protein-rich paneer. Low sodium version."
+        },
+        {
+          "name": "Dal Tadka with Roti",
+          "kcal": 380, "protein": "16g", "carbs": "58g", "fat": "8g",
+          "ingredients": ["Toor dal: 80g", "Whole wheat roti: 2", "Onion: 30g", "Tomato: 40g", "Turmeric: 0.5 tsp", "Cumin seeds: 1 tsp", "Olive oil: 5ml"],
+          "steps": ["Pressure cook dal for 3 whistles", "Saute onion, tomato, spices for tadka", "Mix tadka into dal", "Serve with fresh rotis"],
+          "clinical_note": "High fiber lentils control blood sugar. Whole wheat roti provides sustained energy."
+        },
+        {
+          "name": "Rajma Chawal",
+          "kcal": 400, "protein": "20g", "carbs": "60g", "fat": "7g",
+          "ingredients": ["Rajma: 80g (soaked)", "Brown rice: 60g", "Onion: 40g", "Tomato: 50g", "Ginger garlic paste: 10g", "Garam masala: 1 tsp", "Olive oil: 8ml"],
+          "steps": ["Pressure cook rajma for 5 whistles", "Prepare masala with onion tomato", "Mix rajma in masala, simmer 10 min", "Serve with brown rice"],
+          "clinical_note": "Kidney beans are excellent for blood sugar control. Rich in plant protein."
+        }
+      ],
+      "non_veg": [
+        {
+          "name": "Grilled Chicken with Quinoa Salad",
+          "kcal": 450, "protein": "38g", "carbs": "35g", "fat": "12g",
+          "ingredients": ["Chicken breast: 120g", "Quinoa: 60g", "Cucumber: 50g", "Cherry tomato: 40g", "Lemon juice: 10ml", "Olive oil: 8ml", "Mixed herbs: 2g"],
+          "steps": ["Marinate chicken with herbs and lemon", "Grill chicken 15 min", "Cook quinoa", "Toss quinoa with vegetables and olive oil", "Serve chicken on quinoa salad"],
+          "clinical_note": "Lean protein with complete amino acids. Quinoa has low glycemic index."
+        },
+        {
+          "name": "Tuna Rice Bowl",
+          "kcal": 650, "protein": "21g", "carbs": "68g", "fat": "18g",
+          "ingredients": ["Canned tuna: 80g", "Brown rice: 60g", "Cucumber: 50g", "Avocado: 50g", "Soy sauce: 5ml", "Sesame seeds: 5g", "Lemon juice: 10ml"],
+          "steps": ["Cook and cool brown rice", "Mix tuna with soy sauce", "Assemble bowl with rice, cucumber, avocado", "Top with sesame seeds and lemon"],
+          "clinical_note": "Omega-3 rich. Good cardiovascular support."
+        }
+      ]
+    },
+    "dinner": {
+      "veg": [
+        {
+          "name": "Mixed Vegetable Khichdi",
+          "kcal": 350, "protein": "14g", "carbs": "55g", "fat": "7g",
+          "ingredients": ["Rice: 40g", "Moong dal: 40g", "Carrot: 30g", "Peas: 30g", "Turmeric: 0.5 tsp", "Cumin: 1 tsp", "Ghee: 5g"],
+          "steps": ["Wash rice and dal together", "Pressure cook with vegetables, turmeric, cumin for 3 whistles", "Temper with ghee and cumin", "Serve warm"],
+          "clinical_note": "Easy to digest. Ideal light dinner for diabetic patients."
+        },
+        {
+          "name": "Paneer Tikka with Salad",
+          "kcal": 380, "protein": "22g", "carbs": "20g", "fat": "18g",
+          "ingredients": ["Paneer: 100g", "Capsicum: 40g", "Onion: 30g", "Yogurt: 50g", "Turmeric: 0.5 tsp", "Cumin: 1 tsp", "Lemon juice: 10ml"],
+          "steps": ["Marinate paneer in yogurt and spices 30 min", "Skewer with vegetables", "Grill or bake at 200C for 15 min", "Serve with green salad"],
+          "clinical_note": "High protein, low carb dinner. Good for weight management."
+        }
+      ],
+      "non_veg": [
+        {
+          "name": "Baked Salmon with Vegetables",
+          "kcal": 420, "protein": "35g", "carbs": "18g", "fat": "18g",
+          "ingredients": ["Salmon: 120g", "Zucchini: 80g", "Cherry tomato: 60g", "Garlic: 8g", "Lemon juice: 15ml", "Olive oil: 8ml", "Mixed herbs: 3g"],
+          "steps": ["Place salmon and vegetables on baking tray", "Dress with olive oil, lemon, garlic, herbs", "Bake at 200C for 18 min"],
+          "clinical_note": "Rich in omega-3. Excellent for heart and blood pressure management."
+        }
+      ]
+    },
+    "snack": {
+      "veg": [
+        {
+          "name": "Roasted Makhana",
+          "kcal": 120, "protein": "4g", "carbs": "20g", "fat": "2g",
+          "ingredients": ["Makhana (fox nuts): 30g", "Olive oil: 3ml", "Black pepper: 0.5g", "Turmeric: 0.3g"],
+          "steps": ["Heat oil in pan", "Add makhana, roast on low heat 5 min", "Season with pepper and turmeric"],
+          "clinical_note": "Low calorie. High in antioxidants. Good blood sugar management."
+        },
+        {
+          "name": "Fruit and Nut Mix",
+          "kcal": 180, "protein": "5g", "carbs": "22g", "fat": "9g",
+          "ingredients": ["Walnuts: 15g", "Almonds: 10g", "Apple: 80g", "Cinnamon: 0.5 tsp"],
+          "steps": ["Slice apple", "Mix with nuts", "Sprinkle cinnamon"],
+          "clinical_note": "Walnuts provide omega-3. Apple fiber slows sugar absorption."
+        }
+      ],
+      "non_veg": [
+        {
+          "name": "Boiled Eggs with Cucumber",
+          "kcal": 160, "protein": "13g", "carbs": "5g", "fat": "9g",
+          "ingredients": ["Eggs: 2", "Cucumber: 60g", "Black pepper: 0.5g", "Lemon juice: 5ml"],
+          "steps": ["Boil eggs 8 min", "Slice cucumber", "Season eggs with pepper and lemon"],
+          "clinical_note": "High protein snack. Keeps hunger at bay between meals."
+        }
+      ]
+    }
+  },
+  "exercise": {
+    "low_impact": [
+      {
+        "name": "Chair Yoga",
+        "duration": "20 min", "intensity": "Low", "kcal": 60,
+        "steps": ["Seated forward bend: 5 reps", "Seated spinal twist: 5 each side", "Seated leg raises: 10 reps", "Neck rolls: 5 each direction"],
+        "clinical_note": "Safe for knee pain. Improves flexibility and reduces stress.",
+        "avoid_for": []
+      },
+      {
+        "name": "Brisk Walking",
+        "duration": "30 min", "intensity": "Low-Moderate", "kcal": 120,
+        "steps": ["Warm up: slow walk 5 min", "Brisk walk at 5 km/h for 20 min", "Cool down: slow walk 5 min"],
+        "clinical_note": "Best exercise for diabetics. Improves insulin sensitivity.",
+        "avoid_for": ["severe knee pain"]
+      },
+      {
+        "name": "Swimming",
+        "duration": "30 min", "intensity": "Moderate", "kcal": 200,
+        "steps": ["Warm up stretches 5 min", "Freestyle or breaststroke 20 min", "Cool down floating 5 min"],
+        "clinical_note": "Zero impact on joints. Excellent for knee pain patients.",
+        "avoid_for": []
+      },
+      {
+        "name": "Standing Balance Exercises",
+        "duration": "15 min", "intensity": "Low", "kcal": 40,
+        "steps": ["Single leg stand: 30 sec each", "Heel-to-toe walk: 10 steps", "Side leg raises: 10 each", "Calf raises: 15 reps"],
+        "clinical_note": "Improves balance and stability. Safe for knee pain.",
+        "avoid_for": []
+      }
+    ],
+    "moderate": [
+      {
+        "name": "Cycling (Stationary)",
+        "duration": "30 min", "intensity": "Moderate", "kcal": 220,
+        "steps": ["Set resistance to medium", "Warm up 5 min low resistance", "Cycle 20 min medium resistance", "Cool down 5 min"],
+        "clinical_note": "Low joint stress. Excellent cardiovascular workout.",
+        "avoid_for": []
+      },
+      {
+        "name": "Yoga (Gentle Flow)",
+        "duration": "30 min", "intensity": "Low-Moderate", "kcal": 100,
+        "steps": ["Cat-cow stretch: 10 reps", "Child's pose: 1 min", "Warrior I: 30 sec each side", "Tree pose: 30 sec each side", "Corpse pose: 5 min"],
+        "clinical_note": "Reduces blood pressure and cortisol. Excellent for hypertension.",
+        "avoid_for": ["knee pain — modify warrior pose"]
+      }
+    ]
+  },
+  "wellness": [
+    {
+      "topic": "sleep",
+      "tip": "Aim for 7-8 hours of sleep. Poor sleep raises blood sugar and blood pressure.",
+      "actions": ["Sleep and wake at the same time daily", "Avoid screens 1 hour before bed", "Keep bedroom cool and dark", "Avoid caffeine after 3pm"]
+    },
+    {
+      "topic": "stress",
+      "tip": "Chronic stress raises cortisol which directly increases blood sugar levels.",
+      "actions": ["Practice deep breathing for 5 min daily", "Try 10 min meditation using any app", "Take short walks during work breaks", "Talk to someone you trust regularly"]
+    },
+    {
+      "topic": "hydration",
+      "tip": "Drink at least 2.5 liters of water daily. Dehydration worsens blood sugar control.",
+      "actions": ["Start day with 1 glass of warm water", "Carry a water bottle at all times", "Eat water-rich fruits like cucumber and watermelon", "Limit sugary drinks and alcohol completely"]
+    },
+    {
+      "topic": "blood sugar",
+      "tip": "Monitor blood sugar regularly and log patterns to identify triggers.",
+      "actions": ["Check fasting glucose every morning", "Log meals and glucose readings together", "Avoid skipping meals", "Eat at consistent times daily"]
+    }
+  ],
+  "greetings": [
+    "Hello! I'm your personal AI health assistant. I can help you with personalized meal plans, exercise suggestions, and wellness tips. What would you like to know today?",
+    "Hi there! Ready to support your health journey. Ask me about your meals, exercise, or wellness tips!",
+    "Welcome! I'm here to help you with diet, exercise, and wellness guidance tailored just for you."
+  ]
+}
